@@ -39,18 +39,12 @@ Things you may want to cover:
 |------|----|-------|
 |title|string|null:false|
 |text|text|null:false|
+|image|text||
 |user_id|references|null:false, foreign_key: true|
 ### Association
 - belongs_to :user
 - has_many :comments
-- has_many :images
 
-## imagesテーブル
-|Column|Type|Options|
-|------|----|-------|
-|post_id|references|null:false, foreign_key: true|
-### Association
-- belongs_to :post
 
 ## commentsテーブル
 |Column|Type|Options|
